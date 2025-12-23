@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Streamlit Time Series Investigasi</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+    code { background: #f3f3f3; padding: 2px 4px; border-radius: 3px; }
+    h1 { margin-bottom: 0.2rem; }
+    h2 { margin-top: 1.6rem; }
+    .card { border: 1px solid #e0e0e0; padding: 1rem; border-radius: 6px; background: #fafafa; }
+  </style>
+</head>
+<body>
+  <h1>Jurnal Investigasi Time Series</h1>
+  <p>Antarmuka Streamlit untuk eksplorasi <code>time series data.csv</code>.</p>
+
+  <div class="card">
+    <h2>Cara Menjalankan Lokal</h2>
+    <ol>
+      <li>Pastikan Python 3.9+ terpasang.</li>
+      <li>Instal dependensi:
+        <pre><code>pip install streamlit pandas numpy seaborn statsmodels matplotlib</code></pre>
+      </li>
+      <li>Jalankan aplikasi:
+        <pre><code>streamlit run app.py</code></pre>
+      </li>
+      <li>Buka URL yang muncul (biasanya <code>http://localhost:8501</code>).</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Fitur</h2>
+    <ul>
+      <li>Load & impute data time series, cek gap tanggal.</li>
+      <li>Plot data harian vs rata-rata mingguan.</li>
+      <li>Seasonal decomposition (observed, trend, seasonal, residual).</li>
+      <li>Rolling mean/std dan uji ADF untuk stasioneritas.</li>
+    </ul>
+  </div>
+</body>
+</html>
+
